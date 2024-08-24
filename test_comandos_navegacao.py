@@ -17,7 +17,7 @@ browser.refresh()
 time.sleep(5)
 
 browser.get("https://www.google.com.br")
-time.sleep(3);
+time.sleep(3)
 
 #back
-browser.back();
+browser.back()
