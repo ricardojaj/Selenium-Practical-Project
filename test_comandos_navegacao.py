@@ -3,10 +3,10 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-browser = webdriver.Chrome();
+browser = webdriver.Chrome()
 
 #get()
-browser.get("https://www.selenium.dev/selenium/web/web-form.html");
+browser.get("https://www.selenium.dev/selenium/web/web-form.html")
 time.sleep(2)
 
 #maximize_window()
