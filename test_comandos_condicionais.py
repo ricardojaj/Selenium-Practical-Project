@@ -2,13 +2,13 @@ import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-browser = webdriver.Chrome();
+browser = webdriver.Chrome()
 
 browser.maximize_window()
-browser.get("https://demo.applitools.com/");
+browser.get("https://demo.applitools.com/")
 time.sleep(5)
 
-username = browser.find_element(By.ID, 'username');
+username = browser.find_element(By.ID, 'username')
 checkbox_remember_me = browser.find_element(By.XPATH, "//*[@type='checkbox']")
 
 
@@ -23,11 +23,11 @@ assert username.is_enabled()
 
 
 # is_selected ( )
-print(checkbox_remember_me.is_selected());
+print(checkbox_remember_me.is_selected())
 assert not checkbox_remember_me.is_selected()
 
-checkbox_remember_me.click();
+checkbox_remember_me.click()
 time.sleep(5)
 
-print(checkbox_remember_me.is_selected());
+print(checkbox_remember_me.is_selected())
 assert checkbox_remember_me.is_selected()
